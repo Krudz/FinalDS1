@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="519.0" prefWidth="851.0" styleClass="background-panel" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maker.view.ControladoraSoporte">
+   <children>
+      <ImageView fitHeight="525.0" fitWidth="857.0" layoutX="-4.0" layoutY="-4.0" opacity="0.35" pickOnBounds="true">
+         <image>
+            <Image url="@inicio-cajero.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="204.0" fitWidth="501.0" layoutX="175.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="335.0" layoutY="361.0" styleClass="label-bright" text="soporte@deltadevs.com.co">
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </Label>
+      <Label layoutX="348.0" layoutY="170.0" prefHeight="138.0" prefWidth="144.0" styleClass="imagen-user" />
+      <ImageView fitHeight="148.0" fitWidth="233.0" layoutX="309.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logoEmpresa.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <Label layoutX="375.0" layoutY="382.0" styleClass="label-bright" text=" 311 404 5322">
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </Label>
+      <Label layoutX="239.0" layoutY="323.0" styleClass="label-header" text="Estamos para ayudarte">
+         <effect>
+            <Glow level="0.49" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

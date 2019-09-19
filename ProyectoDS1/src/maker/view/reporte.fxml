@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="519.0" prefWidth="851.0" styleClass="background-panel" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maker.view.ControladoraReporte">
+   <children>
+      <ImageView fitHeight="521.0" fitWidth="851.0" opacity="0.13" pickOnBounds="true">
+         <image>
+            <Image url="@inicio-cajero.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="14.0" layoutY="14.0" prefHeight="43.0" prefWidth="121.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@reportes2.png" />
+               </image>
+            </ImageView>
+            <Label styleClass="label-bright" text="Reportes" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button layoutX="325.0" layoutY="302.0" mnemonicParsing="false" onAction="#verReporte" prefHeight="33.0" prefWidth="192.0" styleClass="button-iniciar-sesion" text="Visualizar Reporte" />
+      <VBox layoutX="203.0" layoutY="72.0" />
+      <JFXDatePicker fx:id="dpSelectorFecha" layoutX="323.0" layoutY="220.0" promptText="Seleccionar Fecha" />
+      <Label layoutX="206.0" layoutY="390.0" styleClass="label-inicio" text="En el escritorio puedes visualizar los reportes PDF" />
+   </children>
+</AnchorPane>

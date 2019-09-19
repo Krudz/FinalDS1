@@ -1,0 +1,424 @@
+.background-panel {
+    -fx-background-color: linear-gradient(to right top, rgb(48, 47, 47), #000);
+}
+
+.label-inicio{
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.label-cliente-header{
+    -fx-background-color: linear-gradient(rgba(1, 77, 45, 0.548),rgb(0,140,82));
+    -fx-text-fill: white;
+    -fx-font-size: 17pt;
+    -fx-font-weight: 700;
+}
+
+.label-cajero-list{
+    /*-fx-background-color:linear-gradient(to right bottom,rgb(22, 26, 29),rgba(60, 66, 70, 0.815));*/
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 9pt;
+}
+
+
+.label-fondo{
+    -fx-background-color:linear-gradient(to right bottom,rgb(22, 26, 29),rgba(60, 66, 70, 0.815));
+    -fx-text-fill: white;
+    -fx-font-size: 10pt;
+}
+
+.label-cajero-list:hover{
+    -fx-background-color:linear-gradient(to right bottom,#02a898,#028073);
+}
+
+.imagen-user{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10,0,0,0);
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-width:5;
+    -fx-background-color: rgba(104, 100, 100, 0.521);
+}
+
+/*label facturacion blank*/
+.label-blank{
+    -fx-background-color: rgba(104, 100, 100, 0.521);
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-text-fill: rgb(0, 228, 201);
+}
+
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+.label-header {
+    -fx-font-size: 27pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+    -fx-text-fill: white;
+
+}
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 14pt;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent derive(-fx-base, 80%) transparent;
+    -fx-border-insets: 0 10 1 0;
+    -fx-text-fill: white;
+
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+.table-view-2:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #019687;
+    -fx-text-fill: white;
+
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
+    -fx-background-color: transparent, derive(#1d1d1d,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,20%);
+}
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+.menu-bar .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+
+
+
+/* textfield */
+/* textfield/*
+
+ */
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    /*-fx-background-color: #cdd3d3;
+
+
+    -fx-text-box-border: transparent;
+    /*-fx-background-radius: 50px;/**/
+    -fx-padding: 5;
+    -fx-font-size:14px;
+    -fx-text-fill: #00ccb8;
+    -fx-prompt-text-fill: linear-gradient( rgb(255, 255, 255) 50%, rgb(190, 206, 220) 70%);
+    /*-fx-border-radius: 50px;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;/**/
+}
+
+
+
+
+/*INICIO DE SESION - BUTTON -*/
+
+.button-iniciar-sesion {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button-iniciar-sesion:hover {
+    -fx-background-color: #028073;
+    -fx-text-fill: #ffffff;
+}
+
+.button-iniciar-sesion:pressed, .button-iniciar-sesion:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+}
+
+.button-iniciar-sesion:focused {
+    -fx-border-style:solid;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;  
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+}
+
+.button-iniciar-sesion:disabled, .button-iniciar-sesion:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;  
+}
+
+.button-iniciar-sesion:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button-iniciar-sesion:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+
+/*CERRAR SESION - BUTTON -*/
+.button-cerrar-sesion {
+    -fx-padding: 5 5 5 5;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+    -fx-background-color: #02a898;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 7pt;
+    -fx-text-fill: #ffffff;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button-cerrar-sesion:hover {
+    -fx-background-color: #f82c2c;
+    -fx-text-fill: #ffffff;
+}
+
+.button-cerrar-sesion:pressed, .button-cerrar-sesion:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+}
+
+.button-cerrar-sesion:focused {
+    -fx-border-style:solid;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;  
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+}
+
+.button-cerrar-sesion:disabled, .button-cerrar-sesion:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button-cerrar-sesion:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button-cerrar-sesion:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+
+/*Combo box*/
+.caja-seleccion{
+    -fx-padding: 0;
+    -fx-border-color: #fff;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+    -fx-background-color: rgb(179, 177, 177);
+    -fx-font-size: 10pt;
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-prompt-text-fill: rgb(0, 0, 0);
+}
+
+.caja-seleccion:hover{
+    -fx-background-color: rgb(228, 228, 228);}
+
+
+
+
+
+.caja-seleccion-2{
+    -fx-padding: 0;
+    -fx-border-color: #fff;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+    -fx-background-color: rgb(73, 72, 72);
+    -fx-font-size: 10pt;
+    -fx-text-fill: #fff;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-prompt-text-fill: rgb(255, 255, 255);
+}
+
+.caja-seleccion-2:hover{
+    -fx-background-color: rgb(44, 44, 44);}
+
+.caja-seleccion-2:editable{
+    -fx-text-fill: #fff;
+}
+
+
+/*boton buscar*/
+.boton-buscar{
+    -fx-padding: 0;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #202020;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-prompt-text-fill: rgb(255, 255, 255);
+}
+
+.boton-buscar:hover{
+    -fx-background-color: #00b6a4;
+    -fx-text-fill: #ffffff;
+}
+
+.boton-buscar:focused {
+    -fx-border-style:solid;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;  
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+}
+
+.boton-buscar:pressed, .boton-buscar:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+}
+
+/*boton cargar imagen*/
+.boton-cargar-imagen{
+    -fx-padding: 0;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+    -fx-background-color: #02a898;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #000;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-prompt-text-fill: rgb(255, 255, 255);
+}
+
+.boton-cargar-imagen:hover{
+    -fx-background-color: #11e4cf;
+    -fx-text-fill: #000;
+}
+
+.boton-cargar-imagen:focused {
+    -fx-border-style:solid;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;  
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-border-color: #1f1d1d;
+    -fx-border-width: 2;
+}
+
+.boton-cargar-imagen:pressed, .boton-cargar-imagen:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+}
+
+
+/*boton gestionar usuarios*/
+.boton-gestionar-usuarios{
+    -fx-padding: 0;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+    -fx-background-color: #6d1c92;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #ffffff;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-prompt-text-fill: rgb(255, 255, 255);
+}
+
+.boton-gestionar-usuarios:hover{
+    -fx-background-color: #960d9b;
+    -fx-text-fill: #ffffff;
+}
+
+.boton-gestionar-usuarios:focused {
+    -fx-border-style:solid;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;  
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+}
+
+.boton-gestionar-usuarios:pressed, .boton-gestionar-usuarios:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;   
+}
+

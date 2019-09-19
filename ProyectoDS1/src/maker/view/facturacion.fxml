@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panelFacturacion" minHeight="0.0" minWidth="0.0" prefHeight="519.0" prefWidth="851.0" styleClass="background-panel" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maker.view.ControladoraFacturacion">
+   <children>
+      <ImageView fitHeight="521.0" fitWidth="851.0" opacity="0.13" pickOnBounds="true">
+         <image>
+            <Image url="@inicio-cajero.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="14.0" layoutY="14.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@factura.png" />
+               </image>
+            </ImageView>
+            <Label styleClass="label-bright" text="Facturación" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tablaProductosFactura" layoutX="-1.0" layoutY="264.0" prefHeight="153.0" prefWidth="851.0" styleClass="table-view-2">
+         <columns>
+            <TableColumn fx:id="tvCodigo" prefWidth="143.0" text="Codigo" />
+            <TableColumn fx:id="tvDescripcion" prefWidth="508.0" text="Descripción Producto" />
+            <TableColumn fx:id="tvSubtotal" minWidth="0.0" prefWidth="195.0" text="Subtotal" />
+         </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="440.0" mnemonicParsing="false" onAction="#mostrarAddProductoFacturacion" styleClass="button-iniciar-sesion" text="Añadir producto" />
+      <Button layoutX="181.0" layoutY="440.0" mnemonicParsing="false" onAction="#quitarProductoFactura" prefHeight="31.0" prefWidth="161.0" styleClass="button-iniciar-sesion" text="Quitar producto" />
+      <Label layoutX="642.0" layoutY="25.0" styleClass="label-bright" text="Factura #" />
+      <ButtonBar layoutX="-2.0" layoutY="115.0" prefHeight="40.0" prefWidth="380.0">
+         <buttons>
+            <JFXComboBox fx:id="cbSelectorClientes" editable="true" focusColor="#00ccb800" onAction="#seleccionarCliente" prefHeight="27.0" prefWidth="273.0" promptText="Cliente" styleClass="caja-seleccion-2" unFocusColor="#ffffff00" />
+            <Button mnemonicParsing="false" onAction="#crearCliente" prefHeight="34.0" styleClass="boton-cargar-imagen" text="Nuevo..." />
+         </buttons>
+      </ButtonBar>
+      <Label layoutX="21.0" layoutY="175.0" styleClass="label-bright" text="Nombre:" />
+      <Label layoutX="23.0" layoutY="209.0" styleClass="label-bright" text="C.C.:" />
+      <Label layoutX="426.0" layoutY="209.0" styleClass="label-bright" text="Email:" />
+      <Label layoutX="668.0" layoutY="174.0" styleClass="label-bright" text="Telefono:" />
+      <Label fx:id="nombreCliente" alignment="CENTER" layoutX="83.0" layoutY="177.0" prefHeight="17.0" prefWidth="547.0" styleClass="label-blank" />
+      <Label fx:id="ccCliente" alignment="CENTER" layoutX="58.0" layoutY="210.0" prefHeight="17.0" prefWidth="132.0" styleClass="label-blank" />
+      <Label fx:id="emailCliente" alignment="CENTER" layoutX="472.0" layoutY="212.0" prefHeight="17.0" prefWidth="359.0" styleClass="label-blank" />
+      <Label fx:id="telefonoCliente" alignment="CENTER" layoutX="737.0" layoutY="176.0" prefHeight="17.0" prefWidth="95.0" styleClass="label-blank" />
+      <Button layoutX="670.0" layoutY="473.0" mnemonicParsing="false" onAction="#generarFactura" prefHeight="30.0" prefWidth="160.0" styleClass="button-iniciar-sesion" text="Generar factura" />
+      <Label layoutX="661.0" layoutY="422.0" styleClass="label-bright" text="Total" />
+      <Label fx:id="lValorTotal" alignment="CENTER" layoutX="701.0" layoutY="424.0" prefHeight="17.0" prefWidth="132.0" styleClass="label-blank" />
+      <JFXComboBox fx:id="cbSelectorPagoFactura" focusColor="#00ccb800" layoutX="641.0" layoutY="73.0" prefWidth="182.0" promptText="Medio de pago" styleClass="caja-seleccion" unFocusColor="#ededed00" />
+      <Label fx:id="numeracionFactura" alignment="CENTER" layoutX="720.0" layoutY="25.0" prefHeight="17.0" prefWidth="95.0" styleClass="label-blank" textAlignment="CENTER" />
+      <Label layoutX="196.0" layoutY="209.0" styleClass="label-bright" text="Direccion:" />
+      <Label fx:id="direccionCliente" alignment="CENTER" layoutX="266.0" layoutY="210.0" prefHeight="17.0" prefWidth="151.0" styleClass="label-blank" />
+      <Label fx:id="lFecha" contentDisplay="CENTER" layoutX="21.0" layoutY="71.0" prefHeight="17.0" prefWidth="120.0" text="Label" textAlignment="CENTER" textFill="#00b9a0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

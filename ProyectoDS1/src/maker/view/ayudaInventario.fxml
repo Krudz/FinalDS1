@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="203.0" prefWidth="518.0" styleClass="background-panel" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maker.view.ControladoraAyudaInventario">
+   <children>
+      <ImageView fitHeight="257.0" fitWidth="518.0" layoutY="-27.0" opacity="0.18" pickOnBounds="true">
+         <image>
+            <Image url="@info.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_LEFT" layoutX="21.0" layoutY="25.0" prefHeight="30.0" prefWidth="487.0" styleClass="label-inicio" text="- El Proveedor debe tener un codigo existente y activo." textFill="WHITE" />
+      <Button layoutX="214.0" layoutY="150.0" mnemonicParsing="false" onAction="#aceptar" styleClass="button-iniciar-sesion" text="Aceptar" />
+      <Label alignment="TOP_LEFT" layoutX="21.0" layoutY="55.0" prefHeight="30.0" prefWidth="494.0" styleClass="label-inicio" text="- La Cantidad en stock debe ser mayor a cero.          " textFill="WHITE" />
+      <Label alignment="TOP_LEFT" layoutX="21.0" layoutY="85.0" prefHeight="30.0" prefWidth="494.0" styleClass="label-inicio" text="- Si la Cantidad en stock es actualmente cero," textFill="WHITE" />
+      <Label alignment="TOP_LEFT" layoutX="36.0" layoutY="113.0" prefHeight="30.0" prefWidth="494.0" styleClass="label-inicio" text="al aumentarla su estado sera &quot;Activo&quot; por defecto." textFill="WHITE" />
+   </children>
+</AnchorPane>

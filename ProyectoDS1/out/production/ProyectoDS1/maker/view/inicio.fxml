@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="840.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maker.view.ControladoraInicio">
+   <children>
+      <SplitPane fx:id="splitAbs" dividerPositions="0.1442125237191651" layoutX="-6.0" layoutY="-6.0" orientation="VERTICAL" prefHeight="607.0" prefWidth="851.0">
+         <items>
+            <AnchorPane maxWidth="850.0" minHeight="0.0" minWidth="0.0" prefHeight="116.0" prefWidth="850.0" styleClass="background-panel" stylesheets="@DarkTheme.css" SplitPane.resizableWithParent="false">
+               <children>
+                  <ImageView fitHeight="649.0" fitWidth="1105.0" layoutX="-75.0" layoutY="1.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fondoTop.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="816.0" layoutY="10.0" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="25.0" prefWidth="27.0" styleClass="button-cerrar-sesion" text="X" />
+                  <Label fx:id="lReportes" alignment="CENTER" contentDisplay="CENTER" layoutX="480.0" layoutY="4.0" onMouseClicked="#mostrarPanelReportes" prefHeight="98.0" prefWidth="95.0" styleClass="label-cajero-list" stylesheets="@DarkTheme.css" text="REPORTES" />
+                  <Label fx:id="lProveedores" alignment="CENTER" contentDisplay="CENTER" layoutX="248.0" layoutY="3.0" onMouseClicked="#mostrarPanelProveedores" prefHeight="104.0" prefWidth="95.0" styleClass="label-cajero-list" stylesheets="@DarkTheme.css" text="PROVEEDORES" />
+                  <Label fx:id="lInventario" alignment="CENTER" contentDisplay="CENTER" layoutX="132.0" layoutY="4.0" onMouseClicked="#mostrarPanelInventario" prefHeight="104.0" prefWidth="95.0" styleClass="label-cajero-list" stylesheets="@DarkTheme.css" text="INVENTARIO" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="4.0" onMouseClicked="#mostrarPanelFacturacion" prefHeight="104.0" prefWidth="95.0" styleClass="label-cajero-list" stylesheets="@DarkTheme.css" text="FACTURACIÓN" textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="711.0" layoutY="1.0" onMouseClicked="#mostrarPanelSoporte" prefHeight="100.0" prefWidth="95.0" styleClass="label-cajero-list" stylesheets="@DarkTheme.css" text="SOPORTE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="364.0" layoutY="4.0" onMouseClicked="#mostrarPanelClientes" prefHeight="100.0" prefWidth="95.0" styleClass="label-cajero-list" stylesheets="@DarkTheme.css" text="CLIENTES" />
+                  <Label fx:id="lPerfiles" alignment="CENTER" contentDisplay="CENTER" layoutX="596.0" layoutY="3.0" onMouseClicked="#mostrarPanelPerfiles" prefHeight="100.0" prefWidth="95.0" styleClass="label-cajero-list" stylesheets="@DarkTheme.css" text="PERFILES" />
+                  <ImageView fx:id="iReportes" fitHeight="38.0" fitWidth="50.0" layoutX="508.0" layoutY="7.0" onMouseClicked="#mostrarPanelReportes" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@reportes2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="iProveedores" fitHeight="38.0" fitWidth="50.0" layoutX="278.0" layoutY="12.0" onMouseClicked="#mostrarPanelProveedores" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@camion.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="iPerfiles" fitHeight="38.0" fitWidth="50.0" layoutX="624.0" layoutY="9.0" onMouseClicked="#mostrarPanelPerfiles" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@administracion.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="739.0" layoutY="7.0" onMouseClicked="#mostrarPanelSoporte" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@soporte.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="391.0" layoutY="13.0" onMouseClicked="#mostrarPanelClientes" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@clientes.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="44.0" layoutY="10.0" onMouseClicked="#mostrarPanelFacturacion" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@factura.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="iInventario" fitHeight="45.0" fitWidth="44.0" layoutX="159.0" layoutY="7.0" onMouseClicked="#mostrarPanelInventario" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@caja.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="splitBottom" minHeight="0.0" minWidth="0.0" prefHeight="524.0" prefWidth="851.0" styleClass="background-panel">
+               <children>
+                  <ImageView fitHeight="515.0" fitWidth="851.0" layoutX="7.0" opacity="0.35" pickOnBounds="true">
+                     <image>
+                        <Image url="@inicio-cajero.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="159.0" fitWidth="442.0" layoutX="234.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="325.0" layoutY="307.0" styleClass="label-header" text="¡Bienvenido!">
+                     <effect>
+                        <Glow level="0.49" />
+                     </effect>
+                  </Label>
+                  <Label fx:id="lUsuarioLogueado" alignment="CENTER" layoutX="219.0" layoutY="358.0" prefHeight="17.0" prefWidth="429.0" styleClass="label-bright" text="Christian Alexis Rodriguez" textAlignment="CENTER">
+                     <effect>
+                        <Glow level="0.56" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="323.0" layoutY="114.0" prefHeight="189.0" prefWidth="204.0" styleClass="imagen-user" />
+                  <ImageView fitHeight="154.0" fitWidth="153.0" layoutX="348.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@foto-01.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
